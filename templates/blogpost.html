@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% import 'icons.html' as icons %} {% block title %}
+{{post.title}} - {% endblock %} {% block heading %}
+
+<h1 class="p-2 text-center">This is the blog post template</h1>
+<h2 class="p-2 text-center">{{post.title}} - {{post.author}}</h2>
+<body>
+    {{post.content}}
+</body>
+
+{%endblock%}
